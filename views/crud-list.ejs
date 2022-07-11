@@ -89,7 +89,7 @@ body{
     <div class="table-data">
         <div class="list-title">
  <h2>CRUD List</h2>
-            <a href="/user">CRUD From</a>
+            <a href="/create">CRUD From</a>
             </div>
 <br><br>
     <table border="1" >
@@ -114,8 +114,8 @@ body{
             <td><%=data.emailAddress %></td>
             <td><%=data.city %></td>
             <td><%=data.country %></td>
-            <td><a href="/crud/edit/<%=data.id%>">Edit</a></td>
-            <td><a href="/crud/delete/<%=data.id%>">Delete</a></td>
+            <td><a href="/edit/<%=data.id%>">Edit</a></td>
+            <td><a href="/delete/<%=data.id%>">Delete</a></td>
         </tr>
         <%  i++; }) %>
         <% } else{ %>

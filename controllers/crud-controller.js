@@ -7,7 +7,7 @@ module.exports = {
   createData: function (req, res) {
     var inputData = req.body;
     crudModel.createData(inputData, function (data) {
-      res.render('crud-form')
+      res.render('crud-form');
       console.log(" record was created");
     });
   },
@@ -27,7 +27,7 @@ module.exports = {
     var inputData = req.body;
     var editId = req.params.id;
     crudModel.updateData(inputData, editId, function (data) {
-      res.redirect('/crud/data-list')
+      res.redirect('/crud/data-list');
       console.log(" record was updated");
     });
   },
@@ -35,7 +35,7 @@ module.exports = {
 
     var deleteId = req.params.id;
     crudModel.deleteData(deleteId, function (data) {
-      res.redirect('/crud/data-list')
+      res.redirect('/crud/data-list');
       console.log(" record was deleted");
     });
   }
