@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-const app = require('./app');
+const app = require('./index');
 mongoose.connect('mongodb://localhost:27017/expressapp');
 var conn = mongoose.connection;
 
